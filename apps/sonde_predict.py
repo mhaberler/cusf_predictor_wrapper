@@ -27,12 +27,16 @@ PRED_BINARY = "./pred"
 GFS_PATH = "./gfs/"
 
 # Launch Parameters
-LAUNCH_TIME = "11:15Z" # This can be anything that dateutil can parse. The time *must* be in UTC.
-LAUNCH_STEP = 12 # Time step, in hours, between launch predictions.
+LAUNCH_TIME = "03:00Z" # This can be anything that dateutil can parse. The time *must* be in UTC.
+LAUNCH_STEP = 24 # Time step, in hours, between launch predictions.
 LAUNCH_TIME_LIMIT = 168 # Predict out this many hours into the future
-LAUNCH_LAT = -34.9499
-LAUNCH_LON = 138.5194
-LAUNCH_ALT = 0.0
+
+#LAUNCH_TIME = datetime.datetime(2021,3,17,3,0, tzinfo=pytz.utc)
+
+LAUNCH_LAT = 46.9931
+LAUNCH_LON = 15.4392
+LAUNCH_ALT = 340.0
+
 ASCENT_RATE = 5.0
 DESCENT_RATE = 6.0
 BURST_ALT = 26000.0

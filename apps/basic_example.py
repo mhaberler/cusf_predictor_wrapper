@@ -10,6 +10,7 @@
 import datetime, sys
 from cusfpredict.predict import Predictor
 from cusfpredict.utils import *
+import pytz
 
 # Predictor Binary and GFS data location
 PRED_BINARY = "./pred"
@@ -17,10 +18,11 @@ GFS_PATH = "./gfs"
 
 # Launch Parameters
 LAUNCH_TIME = datetime.datetime.utcnow() # Note that this time is interpreted as a UTC time
+LAUNCH_TIME = datetime.datetime(2021,3,17,3,0, tzinfo=pytz.utc)
 
-LAUNCH_LAT = -34.9499
-LAUNCH_LON = 138.5194
-LAUNCH_ALT = 0.0
+LAUNCH_LAT = 46.9931   
+LAUNCH_LON = 15.4392
+LAUNCH_ALT = 340.0
 
 ASCENT_RATE = 5.0
 DESCENT_RATE = 5.0
